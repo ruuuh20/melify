@@ -24,6 +24,15 @@
 //   padding: 10px;
 // }
 
+
+//header
+.header {
+      margin: 0px auto 80px auto;
+}
+.logo {
+  text-align: center;
+  top: 4%;
+}
  // show
 
  .wrapper {
@@ -52,6 +61,10 @@
  .album-info {
    padding-top: 5px;
    margin-bottom: 35px;
+
+ }
+
+ .album-info .info {
    border: 1px solid #e5e5e5;
  }
 
@@ -63,4 +76,10 @@
  .details {
    padding: 25px 0 33px 300px;
    margin-left: -1px;
+   min-height: 314px;
+ }
+
+ img.thumnail {
+   width: 282px;
+   height: 282px;
  }
