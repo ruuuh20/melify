@@ -1,4 +1,19 @@
 <h1 class="page-header"><%= @artist.name %></h1>
+
+<h2> Popularity |
+<%= @artist.popularity %>
+</h2>
+
+<h2>Top Tracks: </h2>
+<ul>
+    <% @artist.top_tracks(:US).each do |track| %>
+    <h3><%= track.name %></h3>
+      <li> <%= track.name %> url: <%= track.external_urls %></li>
+    <% end %>
+</ul>
+
+
+<h2>Albums: </h2>
 <% @artist.albums(country: 'US').each do |album| %>
  <h3><%= album.name %></h3>
  <ul>
