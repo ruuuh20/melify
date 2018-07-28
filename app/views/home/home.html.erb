@@ -11,10 +11,13 @@
 
 
 <% @new_releases.each do |new| %>
-<div class="album">
+<%= link_to album_path(new.id) do %>
+<div class="album" href=>
   <img class="album-img" src="<%= new.images[1]["url"] %>" alt="">
     <%= new.artists.first.name%>
-      </div>
+</div>
+
+<% end %>
 <% end %>
 
 </div>
