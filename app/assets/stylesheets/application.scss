@@ -20,10 +20,29 @@
  @import 'slick';
 
 
-
+// * {
+//   padding: 10px;
+// }
 
  // show
 
+ .wrapper {
+     padding: 0 20px
+ }
+
+.main {
+
+  width: 1008px;
+  margin: 0 auto;
+}
  .popular {
 
+ }
+
+ .multiple-items {
+   width: 55%;
+ }
+
+ img.album-img {
+   width: 80%;
  }
