@@ -1,0 +1,7 @@
+<h1>Melify</h1>
+
+<% @new_releases.each do |new| %>
+  <%= new.name %>
+
+  <img src="<%= new.images[1]["url"] %>" alt="">
+<% end %>
