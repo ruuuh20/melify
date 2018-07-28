@@ -24,6 +24,9 @@
 //   padding: 10px;
 // }
 
+body {
+  padding: 0 6%;
+}
 
 //header
 .header {
@@ -82,4 +85,19 @@
  img.thumnail {
    width: 282px;
    height: 282px;
+ }
+
+ .list dt {
+   float: left;
+width: 100px;
+padding-top: 6px;
+color: #888888;
+font-size: 13px;
+ }
+
+ .list dd {
+   padding-top: 6px;
+    margin-left: 60px;
+    color: #606060;
+    font-size: 13px;
  }

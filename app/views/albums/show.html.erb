@@ -23,6 +23,21 @@
       </h3>
       <% end %>
 
+      <dl class="list">
+										<dt>Release Date</dt>
+										<dd><%= @album.release_date %></dd>
+										<dt>Genres</dt>
+										  <%= @album.genres.each do |genre| %>
+                        <dd>genre</dd>
+                      <% end %>
+										<dt>Label</dt>
+                    <% @album.copyrights.each do |copy| %>
+										  <dd><%= copy["text"] %></dd>
+                    <% end %>
+										<dt>기획사</dt>
+										<dd>VMC</dd>
+									</dl>
+
     </div>
 
   </div>
