@@ -18,6 +18,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import 'slick';
+ @import "font-awesome";
 
 
 // * {
@@ -101,3 +102,9 @@ font-size: 13px;
     color: #606060;
     font-size: 13px;
  }
+
+.button_icons {
+  display: inline-block;
+
+    vertical-align: middle;
+}

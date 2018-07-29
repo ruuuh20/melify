@@ -44,6 +44,10 @@
 
   <div class="section">
     <div class="tracklist">
+      <div class="title">
+        <h3>Tracks(<%= @album.tracks.length %>)</h3>
+
+      </div>
       <table border="1" style="width:100%">
 						<colgroup>
 							<col style="width: 15px"><!-- checkbox -->
@@ -64,13 +68,13 @@
 							<div class="wrap t_right"><input type="checkbox" title="CD전체 선택" class="input_check d_checkall"></div>
 						</th>
 						<th scope="col">
-							<div class="wrap t_center"><span class="rank">번호</span></div>
+							<div class="wrap t_center"><span class="rank">#</span></div>
 						</th>
 						<th scope="col">
 							<div class="wrap none"></div>
 						</th>
 						<th scope="col">
-							<div class="wrap pd_l_12">곡정보</div>
+							<div class="wrap pd_l_12">Title</div>
 						</th>
 						<th scope="col">
 							<div class="wrap pd_l_30">Likes</div>
@@ -97,7 +101,7 @@
 									<td><div class="wrap t_right"><input type="checkbox" title="<%= @album.tracks.first.name %>" class="input_check " name="input_check" value="31213986"></div></td>
 									<td><div class="wrap t_center"><span class="rank ">1</span><span class="none">위</span></div></td>
 									<td><div class="wrap">
-										<a href="javascript:melon.link.goSongDetail('31213986');" title="<%= @album.tracks.first.name %>" class="btn button_icons type03 song_info"><span class="none">곡정보</span></a>
+										<%= link_to fa_icon('info-circle'), "#", :class =>"btn button_icons type03 song_info" %> <span class="none"></span>
 									</div></td>
 									<td><div class="wrap">
 										<div class="wrap_song_info">
@@ -106,11 +110,7 @@
 												<span title="타이틀 곡" class="bullet_icons title"><span class="none"><%= link_to @album.tracks.first.name, @album.tracks.first.uri  %></span></span>
 
 											</span></div><br>
-											<div class="ellipsis rank02">
 
-
-												<a href="javascript:melon.link.goArtistDetail('672461');" title="넉살 - 페이지 이동">넉살</a><span class="checkEllipsis" style="display: none;"><a href="javascript:melon.link.goArtistDetail('672461');" title="넉살 - 페이지 이동">넉살</a></span>
-											</div>
 
 										</div>
 									</div></td>
@@ -145,10 +145,13 @@
 
   </div>
 
-  <div class="">
-    <%= link_to @album.tracks.first.name, @album.tracks.first.uri  %>
+  <div class="section">
+    <div class="comments">
+      <h3>Comments</h3>
 
+    </div>
   </div>
+
   </div>
 
 </div>
