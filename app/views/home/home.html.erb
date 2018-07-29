@@ -1,24 +1,46 @@
 <div class="wrapper">
 
-</div>
-<h1>Melify</h1>
+<h2>New Releases</h2>
 
-<div class="main">
+  <div class="main">
+
+  <div class="multiple-items">
+
+  <% @new_releases.each do |new| %>
+  <%= link_to album_path(new.id) do %>
+  <div class="album" href=>
+    <img class="album-img" src="<%= new.images[1]["url"] %>" alt="">
+      <%= new.artists.first.name%>
+  </div>
+
+  <% end %>
+  <% end %>
+
+  </div>
+  </div>
 
 
+<div class="posts-section">
+  <ul class="sub-list">
+    <li class="issue-list">
+      <dl class="m">
+        <dd><a href="https://placeholder.com"><img src="http://via.placeholder.com/220x150"></a></dd>
+        <dt></dt>
 
-<div class="multiple-items">
+      </dl>
+      <dl class="m">
+        <dd><a href="https://placeholder.com"><img src="http://via.placeholder.com/220x150"></a></dd>
+        <dt></dt>
 
+      </dl>
+      <dl class="m">
+        <dd><a href="https://placeholder.com"><img src="http://via.placeholder.com/220x150"></a></dd>
+        <dt></dt>
 
-<% @new_releases.each do |new| %>
-<%= link_to album_path(new.id) do %>
-<div class="album" href=>
-  <img class="album-img" src="<%= new.images[1]["url"] %>" alt="">
-    <%= new.artists.first.name%>
-</div>
+      </dl>
+    </li>
 
-<% end %>
-<% end %>
+  </ul>
 
 </div>
 </div>

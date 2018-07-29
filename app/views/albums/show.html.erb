@@ -1,6 +1,4 @@
-<h1>Album Info</h1>
-
-
+<h2>Album Info</h2>
 
 <div class="album-info">
   <div class="info">
@@ -28,7 +26,7 @@
 										<dd><%= @album.release_date %></dd>
 										<dt>Genres</dt>
 										  <%= @album.genres.each do |genre| %>
-                        <dd>genre</dd>
+                        <dd><%= genre %></dd>
                       <% end %>
 										<dt>Label</dt>
                     <% @album.copyrights.each do |copy| %>
@@ -134,9 +132,6 @@
 									</div></td>
 
 								</tr>
-
-
-
 
 			</tbody>
 		</table>

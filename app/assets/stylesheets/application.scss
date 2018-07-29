@@ -26,7 +26,7 @@
 // }
 
 body {
-  padding: 0 6%;
+  padding: 0 5%;
 }
 
 //header
@@ -78,7 +78,7 @@ body {
  }
 
  .details {
-   padding: 25px 0 33px 300px;
+   padding: 25px 0 33px 340px;
    margin-left: -1px;
    min-height: 314px;
  }
@@ -107,4 +107,11 @@ font-size: 13px;
   display: inline-block;
 
     vertical-align: middle;
+}
+
+
+.posts-section .issue-list dl {
+  position: relative;
+  margin: 16px 0 2px 16px;
+  float: left;
 }
