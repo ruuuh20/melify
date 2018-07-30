@@ -15,8 +15,8 @@
 
 
  */
- @import "bootstrap-sprockets";
- @import "bootstrap";
+ // @import "bootstrap-sprockets";
+ // @import "bootstrap";
  @import 'slick';
  @import "font-awesome";
 
@@ -40,7 +40,8 @@ body {
  // show
 
  .wrapper {
-     padding: 0 20px
+     padding: 0 20px;
+     width: 1008px;
  }
 
 .main {
@@ -139,16 +140,16 @@ clear:both
 .chart {
   width: 280px;
   float: left;
-  margin-left: 24px;
+  // margin-left: 24px;
   height: 472px;
   margin-top: 32px;
 }
 
 .chart .list-wrap {
   width: 278px;
-    position: absolute;
-    top: 28px;
-    left: 0;
+    // position: absolute;
+    // top: 28px;
+    // left: 0;
     border: 1px solid #dfe6e8;
     border-width: 0 1px;
 }
