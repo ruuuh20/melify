@@ -41,20 +41,20 @@ body {
 
  .wrapper {
      padding: 0 20px;
-     width: 1008px;
+     // width: 1008px;
  }
 
 .main {
 
   // width: 1008px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
  .popular {
 
  }
 
  .multiple-items {
-   width: 55%;
+   width: 40%;
  }
 
  img.album-img {
@@ -110,11 +110,16 @@ font-size: 13px;
     vertical-align: middle;
 }
 
+.row {
+  width: 100%;
+}
+
 .posts-section {
   // clear: both;
   // width: 704px;
-  // position: relative;
-  // float: left;
+  // width: 80%;
+  position: relative;
+  float: left;
   // margin-top: 32px;
   height: 500px;
 }
@@ -122,10 +127,13 @@ font-size: 13px;
 
 .posts-section .issue-list dl {
   position: relative;
-  margin: 16px 0 2px 16px;
+  margin: 16px 0;
   float: left;
 }
 
+li {
+  list-style: none;
+}
 .issue-list .m0 {
   margin-left: 0px;
 }
@@ -138,18 +146,54 @@ clear:both
 }
 
 .chart {
-  width: 280px;
+  // width: 280px;
+  // width: 20%;
   float: left;
-  // margin-left: 24px;
+  margin-left: 20px;
   height: 472px;
   margin-top: 32px;
 }
 
 .chart .list-wrap {
-  width: 278px;
+  // width: 278px;
     // position: absolute;
-    // top: 28px;
-    // left: 0;
+    top: 28px;
+    left: 0;
     border: 1px solid #dfe6e8;
     border-width: 0 1px;
 }
+
+.col {
+  width: 100%;
+
+}
+
+.col1 {
+  width: 30%;
+  height: 100px;
+  background-color: blue;
+}
+.col2 {
+  width: 60%;
+  height: 100px;
+  background-color: black;
+}
+
+
+#container {
+	text-align: justify;
+	}
+#container > div {
+float: left;
+margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+  background-color: blue;
+
+
+	}
+#container:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+    }
