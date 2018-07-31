@@ -151,7 +151,7 @@ clear:both
   float: left;
   margin-left: 20px;
   height: 472px;
-  margin-top: 32px;
+  // margin-top: 32px;
 }
 
 .chart .list-wrap {
@@ -197,3 +197,36 @@ margin: 10px;
 	width: 100%;
 	display: inline-block;
     }
+
+//@charset "
+.chart .list-wrap li {
+    position: relative;
+    width: 278px;
+    height: 33px;
+    border-bottom: 1px solid #e9edef;
+    font-size: 0;
+    line-height: 0;
+}
+
+.chart .list-wrap li .rank_number {
+    // overflow: hidden;
+    float: left;
+    width: 71px;
+}
+.chart .list-wrap li .rank_number .rank {
+    display: inline-block;
+    float: left;
+    width: 34px;
+    height: 13px;
+    margin: 9px 0 0 5px;
+    // background: url(//cdnimg.melon.co.kr/resource/image/web/main/icon_main.png) no-repeat 0 -445px;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    vertical-align: top;
+}
+.chart .list-wrap li.active {
+    position: relative;
+    // z-index: 10;
+    height: 69px;
+}
