@@ -34,9 +34,34 @@ body {
       margin: 0px auto 80px auto;
 }
 .logo {
-  text-align: center;
+  float: left;
   top: 4%;
 }
+fieldset {
+  display: inline;
+    position: relative;
+    float: left;
+    width: 322px !important;
+    height: 40px;
+margin: 36px 0 0 11px;
+  }
+
+  nav.main-menu {
+    float: left;
+    
+  }
+
+.main-menu ul {
+  float: left;
+
+}
+
+.main-menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+
  // show
 
  .wrapper {
