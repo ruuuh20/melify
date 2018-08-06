@@ -1,8 +1,10 @@
 <div class="wrapper">
 
-<h2>New Releases</h2>
+
 
   <section class="main">
+
+	<h2>New Releases</h2>
 
   <div class="multiple-items">
 
@@ -10,12 +12,10 @@
   <%= link_to album_path(new.id) do %>
   <div class="album" href=>
     <img class="album-img" src="<%= new.images[1]["url"] %>" alt="">
-      <%= new.artists.first.name%>
+      <%= new.artists.first.name %>
   </div>
-
   <% end %>
   <% end %>
-
   </div>
 </section>
 
@@ -132,7 +132,13 @@
 </div>
 </section>
 
-<section class="row">
+<section class="row clear">
+
+<h2>Recent News</h2>
+
+<div>
+<p>Hi</p>
+</div>
 
 </section>
 
